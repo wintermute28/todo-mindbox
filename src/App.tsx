@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Todo, Filter } from "./types";
 import "./App.css";
 import AddTodo from "./components/AddTodo/AddTodo";
+import TodoList from "./components/TodoList/TodoList";
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
@@ -29,6 +30,7 @@ function App() {
     <>
       <h1>Todo</h1>
       <AddTodo onAdd={addTodo} />
+      <TodoList todos={filteredTodos} onToggle={toggleTodo} />
     </>
   );
 }
