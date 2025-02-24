@@ -10,3 +10,14 @@ export interface ITodoItemProps {
   completed: boolean;
   toggleTodo: (id: string) => void;
 }
+
+export interface IAddTodoProps {
+  addTodo: (text: string) => void;
+}
+
+export interface IFilterTodoProps {
+  filter: string;
+  setFilter: (filter: string) => void;
+  clearCompleted: () => void;
+  itemsLeft: number;
+}
