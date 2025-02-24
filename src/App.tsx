@@ -50,6 +50,7 @@ const App: React.FC = () => {
       <h1>todos</h1>
       <AddTodo addTodo={addTodo} />
       <div className="todo-list">
+        {filteredTodos.length === 0 && <p>It's still empty here...</p>}
         {filteredTodos.map((todo) => (
           <TodoItem key={todo.id} {...todo} toggleTodo={toggleTodo} />
         ))}

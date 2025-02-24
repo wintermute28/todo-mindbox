@@ -1,42 +1,51 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.todo-app {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #242424;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list {
+  margin-bottom: 1rem;
+  min-height: 250px;
+}
+
+@media (max-width: 768px) {
+  .todo-app {
+    margin: 1rem auto;
+    padding: 0.75rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .todo-list {
+    min-height: 0;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 480px) {
+  .todo-app {
+    margin: 0.5rem;
+    border-radius: 0;
+    box-shadow: none;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
 }

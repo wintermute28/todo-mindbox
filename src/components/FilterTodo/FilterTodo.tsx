@@ -1,5 +1,7 @@
 import { IFilterTodoProps } from "../../types/types";
 
+import "./FilterTodo.css";
+
 export const FilterTodo: React.FC<IFilterTodoProps> = ({
   filter,
   setFilter,
@@ -8,6 +10,7 @@ export const FilterTodo: React.FC<IFilterTodoProps> = ({
 }) => (
   <div className="filters">
     <span>{itemsLeft} items left</span>
+
     <div className="filter-buttons">
       <button
         onClick={() => setFilter("all")}
@@ -28,6 +31,7 @@ export const FilterTodo: React.FC<IFilterTodoProps> = ({
         Completed
       </button>
     </div>
+
     <button onClick={clearCompleted}>Clear completed</button>
   </div>
 );
