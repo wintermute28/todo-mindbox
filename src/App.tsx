@@ -10,7 +10,7 @@ import { FilterTodo } from "./components/FilterTodo/FilterTodo";
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<ITodo[]>([
-    { id: uuidv4(), text: "Покормить кота ", completed: false },
+    { id: uuidv4(), text: "Покормить кота", completed: false },
     { id: uuidv4(), text: "Поиграть с котом", completed: true },
     { id: uuidv4(), text: "Помыть кота", completed: false },
   ]);
