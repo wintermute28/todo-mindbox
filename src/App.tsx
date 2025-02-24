@@ -8,7 +8,7 @@ import { TodoItem } from "./components/TodoItem/TodoItem";
 import { AddTodo } from "./components/AddTodo/AddTodo";
 import { FilterTodo } from "./components/FilterTodo/FilterTodo";
 
-function App(): React.FC {
+const App: React.FC = () => {
   const [todos, setTodos] = useState<ITodo[]>([
     { id: uuidv4(), text: "Покормить кота ", completed: false },
     { id: uuidv4(), text: "Поиграть с котом", completed: true },
@@ -62,6 +62,6 @@ function App(): React.FC {
       />
     </div>
   );
-}
+};
 
 export default App;
