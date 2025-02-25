@@ -1,8 +1,7 @@
 .filters {
   display: flex;
-
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   align-items: center;
   padding: 16px;
   font-size: 14px;
@@ -51,6 +50,9 @@
 }
 
 @media (max-width: 768px) {
+  .filters {
+    width: 100%;
+  }
   .filter-buttons {
     width: 100%;
     justify-content: center;
