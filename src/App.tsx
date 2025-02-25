@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
+import { AddTodo } from "./components/AddTodo/AddTodo";
+import { FilterTodo } from "./components/FilterTodo/FilterTodo";
+import { TodoList } from "./components/TodoList/TodoList";
+
 import { ITodo } from "./types/types";
 
 import "./App.css";
-import { TodoItem } from "./components/TodoItem/TodoItem";
-import { AddTodo } from "./components/AddTodo/AddTodo";
-import { FilterTodo } from "./components/FilterTodo/FilterTodo";
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<ITodo[]>([
@@ -49,12 +50,7 @@ const App: React.FC = () => {
     <div className="todo-app">
       <h1>todos</h1>
       <AddTodo addTodo={addTodo} />
-      <div className="todo-list">
-        {filteredTodos.length === 0 && <p>It's still empty here...</p>}
-        {filteredTodos.map((todo) => (
-          <TodoItem key={todo.id} {...todo} toggleTodo={toggleTodo} />
-        ))}
-      </div>
+      <TodoList filteredTodos={filteredTodos} toggleTodo={toggleTodo} />
       <FilterTodo
         filter={filter}
         setFilter={setFilter}

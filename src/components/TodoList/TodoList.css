@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list {
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .todo-list {
+    min-height: 0;
+  }
+}

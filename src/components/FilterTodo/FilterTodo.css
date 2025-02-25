@@ -6,7 +6,6 @@
   padding: 16px;
   font-size: 14px;
   color: #777;
-  color: rgba(255, 255, 255, 0.87);
 }
 
 .filter-buttons {
@@ -32,21 +31,8 @@
   color: #6cbe45;
 }
 
-.filters button:not(.active):hover {
-  border-color: #6cbe45;
-}
-
-.filters:last-child {
-  color: #777;
-}
-
 .filters button:hover {
   color: #6cbe45;
-}
-
-.items-left {
-  min-width: 80px;
-  padding-right: 15px;
 }
 
 @media (max-width: 768px) {

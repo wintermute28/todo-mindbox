@@ -21,3 +21,8 @@ export interface IFilterTodoProps {
   clearCompleted: () => void;
   itemsLeft: number;
 }
+
+export interface ITodoListProps {
+  filteredTodos: ITodo[];
+  toggleTodo: (id: string) => void;
+}

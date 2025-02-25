@@ -1,4 +1,3 @@
-import React from "react";
 import { ITodoItemProps } from "../../types/types";
 
 import "./TodoItem.css";
@@ -9,7 +8,7 @@ export const TodoItem: React.FC<ITodoItemProps> = ({
   completed,
   toggleTodo,
 }) => (
-  <div className="todo-item">
+  <li className="todo-item">
     <div className="checkbox-wrapper-31">
       <input
         type="checkbox"
@@ -28,7 +27,7 @@ export const TodoItem: React.FC<ITodoItemProps> = ({
     <span style={{ textDecoration: completed ? "line-through" : "none" }}>
       {text}
     </span>
-  </div>
+  </li>
 );
 
 {

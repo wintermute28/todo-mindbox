@@ -25,20 +25,10 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-.todo-list {
-  margin-bottom: 1rem;
-  flex-grow: 1;
-  width: 80%;
-}
-
 @media (max-width: 768px) {
   .todo-app {
     margin: 1rem auto;
     padding: 0.75rem;
-  }
-
-  .todo-list {
-    min-height: 0;
   }
 }
 
