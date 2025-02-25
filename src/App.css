@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -12,18 +11,24 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #242424;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .todo-list {
   margin-bottom: 1rem;
-  min-height: 250px;
+  flex-grow: 1;
+  width: 80%;
 }
 
 @media (max-width: 768px) {
@@ -40,12 +45,17 @@ h1 {
 @media (max-width: 480px) {
   .todo-app {
     margin: 0.5rem;
-    border-radius: 0;
-    box-shadow: none;
   }
 
   h1 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .todo-app {
+    border-radius: 0;
+    margin: 0;
   }
 }
