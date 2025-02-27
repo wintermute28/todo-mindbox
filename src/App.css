@@ -1,17 +1,21 @@
-#root {
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #8e8e8e;
   max-width: 1280px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .todo-app {
+  box-sizing: border-box;
   max-width: 600px;
   margin: 2rem auto;
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #242424;
-  min-height: 85vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

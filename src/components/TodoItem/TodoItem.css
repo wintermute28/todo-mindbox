@@ -12,11 +12,11 @@
 .checkbox-wrapper-31 {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .checkbox-wrapper-31 .background {
-  fill: #cccccc36;
+  fill: #8e8e8e;
   transition: ease all 0.6s;
   -webkit-transition: ease all 0.6s;
 }

@@ -10,7 +10,9 @@ export const TodoList: React.FC<ITodoListProps> = ({
 }) => {
   return (
     <ul className="todo-list">
-      {filteredTodos.length === 0 && <p>It's still empty here...</p>}
+      {filteredTodos.length === 0 && (
+        <p className="empty">It's still empty here...</p>
+      )}
       {filteredTodos.map((todo) => (
         <TodoItem key={todo.id} {...todo} toggleTodo={toggleTodo} />
       ))}
